@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+<!--    <link rel="shortcut icon" href="img/icon.png" >-->
+    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">-->
+   
+   
+    <title>Bella Estética - Home</title>
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/pace.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#banner').bxSlider({
+          mode:'fade',
+          auto: true,
+          pause: 4000, //tempo da imagem parada
+          speed: 1000, //tempo da transição
+          randomStart: true
+      });
+        
+        $("#efeito").delay(3000).fadeIn(500);
+        
+        $("#opacidade, #fechar").click(function(){
+            $("#efeito").fadeOut(500);           
+                        
+        });
+        
+        
+        $("#barra").hover(function(){
+               $("#efeito").fadeIn(500); 
+            });
+        
+    });
+  </script>
+
+  <script>
+    $(document).ready(function(){
+      AOS.init();
+    });
+
+</script>
+  
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div id="efeito">
+      <div id="opacidade">
+          
+             <div id="popup">
+
+             <span id="fechar">X</span>
+              <img src="img/popup.jpg" alt="">
+          </div>
+      </div>
+  </div>
+  
+  <div id="barra"></div>
+   
+   <header id="topo">
+       
+       <div class="container">
+        
+           <div id="logo">
+               <img src="img/logo.png" alt="">
+           </div>   
+           
+           <nav id="menu">
+               <a href="index.html">Home</a>
+               <a href="quem-somos.html">Qeum Somos</a>
+               <a href="servico.html">Serviço</a>
+               <a href="cliente.html">Cliente</a>
+               <a href="contato.html">Contato</a>
+           </nav>
+           
+       </div>
+   
+   
+   </header>
+   
+   <div id="banner">
+       <img src="img/banner-1.jpg" alt="">
+       <img src="img/banner-2.jpg" alt="">
+       <img src="img/banner-3.jpg" alt="">
+   </div>
+   
+   <div class="container">
+       <div id="conteudo">
+           <p id="depoimento">“Lo rem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            dictum ante eu lectus gravida commodo.”</p>
+            
+            <p id="assinatura">Ana Santos</p>
+       </div>
+       
+       <article id="conteudo-home">
+           <img src="img/itens-spa.jpg" alt="" id="imagem-home" data-aos="fade-right" data-aos-duration="3000">
+           
+           <h1>Lorem ipsum dolor sit amet </h1>
+           
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+           
+           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+           
+           <a href="#" class="botao">Saiba mais</a>
+           
+           <div class="clearfix"></div>
+       </article>
+       
+       <div id="colunas">
+          
+           <section class="coluna" data-aos="flip-left" data-aos-duration="000" data-aos-delay="0">
+
+               <h2>Nosso Serviços</h2>
+               <img src="img/imagem-servicos.jpg" alt="">
+               <a href="servico.html" class="botao">Saiba mais</a>
+           </section>
+           
+           <section class="coluna" data-aos="flip-left" data-aos-duration="5000" data-aos-delay="500">
+
+               <h2>Especial Dia de Noiva</h2>
+               <img src="img/imagem-dia-da-noiva.jpg" alt="">
+               <a href="dia-da-noiva.html" class="botao">Saiba mais</a>
+           </section>
+           
+           <section class="coluna" data-aos="flip-left" data-aos-duration="5000" data-aos-delay="1000">
+               <h2>Ambiente Bella Estética</h2>
+               <img src="img/imagem-ambiente.jpg" alt="">
+               <a href="contato.html" class="botao">Saiba mais</a>
+           </section>
+       </div>
+       
+   </div>
+   
+   <footer>
+       <p>Tel: (21) 3322-4455 / 98788-5544<br>
+       Avenida Rio Branco, 185 - Sala 324 - Centro - Rio de Janeiro</p>
+   </footer>
+    
+</body>
+</html>

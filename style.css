@@ -1,0 +1,232 @@
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: red;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+
+
+
+body{
+    margin: 0;
+    font-family: calibri, sans-serif;
+}
+
+footer{
+    background-color: #3d2868;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1,h2{
+    color: #422e70;
+    font-size: 30px;
+    font-family: 'Expletus Sans', cursive;
+    margin: 0;
+}
+
+h2{
+    font-size: 22px;
+}
+
+/*a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;   
+    transition: 0.5s;
+}
+*/
+
+#opacidade{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 10000;
+    
+    display: flex;
+    justify-content: center;/*horizontal*/
+    align-items: center;/*vertical*/
+}
+
+#efeito{
+    position: absolute;
+    z-index: 100000;
+    display: none;
+}
+
+#barra{
+    width: 100%;
+    height: 2px;
+    /*background-color: yellow;*/
+    position: fixed;
+    z-index: 100000;
+}
+
+#fechar{
+    color: white;
+    font-size: 60px;
+    
+    /*posição em relação ao elemento pai (desde que este possua "position")*/
+    position: absolute;
+    top: -75px;
+    right: -50px; 
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer; /*altera o cursor do mouse na #fechar*/
+    
+}
+
+#popup{
+    position: absolute;
+}
+
+#popup img{
+
+    border: solid 10px white;
+    box-shadow: 5px 5px 20px #000 /*sombra horizontal, vertical, suavidade e cor*/
+}
+
+#conteudo-home p {
+     font-family: 'KoHo', sans-serif;
+     font-size: 70px;
+     font-weight: bold;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+.botao{
+    background-color: #bba6e7;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 40px;
+    border-radius: 3px;
+    margin-top: 5px;
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.coluna{
+    width: 310px;
+    text-align: center;
+}
+
+.bx-wrapper{
+    border: none !important;
+}
+
+#colunas {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;   
+    
+}
+
+#topo{
+    width: 100%;
+    height: 35px;
+    background-color: rgba(65, 43, 112, 0.7);
+    position: absolute;
+    z-index: 1;
+    border-bottom: 3px solid #bba6e7;
+}
+
+#logo{
+    float: left;
+    transform: rotate(-15deg);
+    margin-top: 8px;
+}
+
+#menu{
+    float: right;
+    font-family: 'Expletus Sans', cursive;
+}
+
+
+
+
+#menu a:hover {
+    background-color: #bba6e7;
+    transform: rotate(-15deg);
+    
+}
+
+#banner img{
+    width: 100%;
+}
+
+#conteudo{
+    width: 1000px;
+    height: 150px;
+    background-image: url(img/fundo-destaque.jpg);
+    text-align: center;
+    color: #ffffff;
+    margin: 50px 0;    
+    padding: 25px 30px;
+    box-sizing: border-box;
+}
+
+#depoimento{
+    font-family: 'Expletus Sans', cursive;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;    
+}
+
+#assinatura{
+    margin: 0;
+    
+}
+
+#imagem-home{
+    float: left;
+    margin-right: 50px;
+}
+
+#menu a{
+    color: #ffffff;
+    display: inline-block;
+    padding: 7px 25px;
+    font-family: 'Expletus Sans', cursive;
+    text-decoration: none;    
+    transition: 0.5s;
+}
+
+#conteudo-home h1 {
+    font-size: 30px;
+    color: #422e70;
+}
+
+#conteudo-home p {
+    font-size: 16px;
+    color: #666666;
+}
+
+#localizacao{
+    padding: 50px;
+    background-color: #DCDCDC;
+    text-align: center;
+}
+
